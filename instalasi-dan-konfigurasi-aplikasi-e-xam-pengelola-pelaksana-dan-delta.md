@@ -7,6 +7,7 @@
   
   ![](.gitbook/assets/0%20%282%29.png)
   
+  
 3. Buka folder hasil extract, kemudian jalankan \(klik 2x\) e-Xam Server.vbox
   
   ![](.gitbook/assets/1.png)

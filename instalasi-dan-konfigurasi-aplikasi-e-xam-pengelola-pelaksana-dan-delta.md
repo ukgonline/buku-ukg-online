@@ -28,18 +28,23 @@
   * Klik OK untuk menyimpan konfigurasi **\(Nomor 9\)**.
   
 5. Pilih e-Xam Server kemudian tekan tombol “Start”.
+  
   ![](.gitbook/assets/4.png)
+  
   Tunggu hingga muncul jendela seperti dibawah ini.
+  
   ![](.gitbook/assets/5.png)
 
 6. Buka halaman Pengelola menggunakan web browser ketikkan alamat [http://localhost:8416](http://localhost:8416), maka ditampilkan seperti berikut :
+  
   ![Pesan Init error dikarenakan reginfo.txt belum diupload.](.gitbook/assets/6.png)
 
 7. Langkah berikutnya buka webmin dengan alamat [https://localhost:10000](https://localhost:10000).
   
   ![](.gitbook/assets/7.png)
 
-8. Login webmin dengan username \(**root**\) dan password \(**examserver**\).   
+8. Login webmin dengan username \(**root**\) dan password \(**examserver**\).
+  
 9. Upload file reginfo.txt dan proginfo.txt pada direktori **/srv/exam/pengelola/etc** seperti gambar.
   
   ![](.gitbook/assets/8.png)

@@ -119,7 +119,7 @@ Aplikasi e-Xam Pelaksana terbaru ialah e-Xam Pelaksana versi 2017, penyempurnaan
 
 Adapun cara mengintalasi dengan berbagai cara dijelaskan sebagai berikut :
 
-1. Instalasi Lengkap
+Instalasi Lengkap
 
 Install Seluruh Modul Aplikasi, Bootloader dan konfigurasi bootloader
 

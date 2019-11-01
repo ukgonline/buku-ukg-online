@@ -6,7 +6,7 @@
 2. Extract aplikasi e-Xam Server, klik kanan pilih “Extract Here” \(Pastikan aplikasi untuk WinRar atau sejenis sudah terinstall\).
   
   ![](.gitbook/assets/0%20%282%29.png)
-   
+  \
   
 3. Buka folder hasil extract, kemudian jalankan \(klik 2x\) e-Xam Server.vbox
   

@@ -4,118 +4,118 @@
 
 1. Pastikan aplikasi Virtualbox sudah terinstall.  
 2. Extract aplikasi e-Xam Server, klik kanan pilih “Extract Here” \(Pastikan aplikasi untuk WinRar atau sejenis sudah terinstall\).
-  
-  ![](.gitbook/assets/0%20%282%29.png)
-  
+
+   ![](.gitbook/assets/0%20%282%29.png)  
+
 3. Buka folder hasil extract, kemudian jalankan \(klik 2x\) e-Xam Server.vbox
-  
-  ![](.gitbook/assets/1.png)
-  
+
+   ![](.gitbook/assets/1.png)
+
 4. Lakukan **Konfigurasi** dengan meng-klik menu **Setting** seperti gambar berikut :
-  
-  ![](.gitbook/assets/2.jpeg)
-  ![](.gitbook/assets/3.jpeg)
-  
-  **Keterangan :**
-  * Klik menu Setting **\(Nomor 1\)**
-  * Klik menu Network **\(Nomor 2\)**
-  * Adapter 1, Enable Network Adapater **\(Nomor 3\)**
-  * Attaced to Pilih NAT **\(Nomor 4\)**
-  * Klik Adapter 2 **\(Nomor 5\)**
-  * centang Enable Network Adapater **\(Nomor 6\),**
-  * Pilih Bridged Adapter **\(Nomor 7\)**,
-  * Pilih Ethernet **\(Misalnya : Realteck PCIe Family Controller\)** yg saat ini digunakan untuk internet di PC Server **\(Nomor 8\)**,
-  * Klik OK untuk menyimpan konfigurasi **\(Nomor 9\)**.
-  
+
+   ![](.gitbook/assets/2.jpeg) ![](.gitbook/assets/3.jpeg)
+
+   **Keterangan :**
+
+   * Klik menu Setting **\(Nomor 1\)**
+   * Klik menu Network **\(Nomor 2\)**
+   * Adapter 1, Enable Network Adapater **\(Nomor 3\)**
+   * Attaced to Pilih NAT **\(Nomor 4\)**
+   * Klik Adapter 2 **\(Nomor 5\)**
+   * centang Enable Network Adapater **\(Nomor 6\),**
+   * Pilih Bridged Adapter **\(Nomor 7\)**,
+   * Pilih Ethernet **\(Misalnya : Realteck PCIe Family Controller\)** yg saat ini digunakan untuk internet di PC Server **\(Nomor 8\)**,
+   * Klik OK untuk menyimpan konfigurasi **\(Nomor 9\)**.
+
 5. Pilih e-Xam Server kemudian tekan tombol “Start”.
-  
-  ![](.gitbook/assets/4.png)
-  
-  Tunggu hingga muncul jendela seperti dibawah ini.
-  
-  ![](.gitbook/assets/5.png)
+
+   ![](.gitbook/assets/4.png)
+
+   Tunggu hingga muncul jendela seperti dibawah ini.
+
+   ![](.gitbook/assets/5.png)
 
 6. Buka halaman Pengelola menggunakan web browser ketikkan alamat [http://localhost:8416](http://localhost:8416), maka ditampilkan seperti berikut :
-  
-  ![Pesan Init error dikarenakan reginfo.txt belum diupload.](.gitbook/assets/6.png)
+
+   ![Pesan Init error dikarenakan reginfo.txt belum diupload.](.gitbook/assets/6.png)
 
 7. Langkah berikutnya buka webmin dengan alamat [https://localhost:10000](https://localhost:10000).
-  
-  ![](.gitbook/assets/7.png)
+
+   ![](.gitbook/assets/7.png)
 
 8. Login webmin dengan username \(**root**\) dan password \(**examserver**\).
-  
 9. Upload file reginfo.txt dan proginfo.txt pada direktori **/srv/exam/pengelola/etc** seperti gambar.
-  
-  ![](.gitbook/assets/8.png)
 
-  Keterangan :
-  * **reginfo.txt** = register informasi TUK
-  * **proginfo.txt** = program informasi kegiatan \(bisa berganti sesuai kegiatan\)
+   ![](.gitbook/assets/8.png)
+
+   Keterangan :
+
+   * **reginfo.txt** = register informasi TUK
+   * **proginfo.txt** = program informasi kegiatan \(bisa berganti sesuai kegiatan\)
 
 10. Buka browser isikan alamat [http://localhost:8416](http://localhost:8416), ID LOGIN : **mimin** KATA SANDI : **12345**
-  
-  ![](.gitbook/assets/9.png)
+
+    ![](.gitbook/assets/9.png)
 
 11. Jika sesuai tampil seperti gambar di bawah ini :
-  
-  ![](.gitbook/assets/10.png)
-  
-  Cek versi digunakan melihat versi aplikasi pusat, apabila muncul “**Aplikasi Terbaru**” e-Xam Pengelola siap digunakan, kalau “**Aplikasi Harus Diperbaharui**” maka e-Xam Pengelola harus dilakukan pembaharuan.
+
+    ![](.gitbook/assets/10.png)
+
+    Cek versi digunakan melihat versi aplikasi pusat, apabila muncul “**Aplikasi Terbaru**” e-Xam Pengelola siap digunakan, kalau “**Aplikasi Harus Diperbaharui**” maka e-Xam Pengelola harus dilakukan pembaharuan.
 
 12. Sebelum melakukan pembaharuan Pengelola, install terlebih dahulu aplikasi **e-Xam Delta**. Installasi e-Xam Delta cukup ikuti perintah yang ditampilkan sampai selesai, setelah itu jalankan e-Xam Delta.
-  
-  ![](.gitbook/assets/11.png)
+
+    ![](.gitbook/assets/11.png)
 
 13. Untuk melakukan pembaharuan e-Xam Pengelola, login melalui console Vbox \(username:**root** dan password:**examserver**\). Pastikan koneksi Internet tersambung dengan server pusat, ketikkan **ukgtool update** tunggu sampai seperti gambar berikut :
-  
-  ![](.gitbook/assets/12.png)
 
-  Restart e-Xam Pengelola dengan perintah reboot, tunggu sampai muncul tampilan login.
+    ![](.gitbook/assets/12.png)
+
+    Restart e-Xam Pengelola dengan perintah reboot, tunggu sampai muncul tampilan login.
 
 14. Refresh/reload halaman Pengelola akan ditampilkan :
 
-  ![](.gitbook/assets/13.png)
+    ![](.gitbook/assets/13.png)
 
 15. Server TUK wajib diregister agar server bisa digunakan ujian, klik **Register** **Ajukan Pendaftaran**.
 
-  ![](.gitbook/assets/14.png)
+    ![](.gitbook/assets/14.png)
 
-  Proses register akan disetujui oleh Admin Pusat, setelah disetujui maka Identitas Server menjadi **Sudah terdaftar** seperti gambar berikut :
+    Proses register akan disetujui oleh Admin Pusat, setelah disetujui maka Identitas Server menjadi **Sudah terdaftar** seperti gambar berikut :
 
-  ![](.gitbook/assets/15.png)
+    ![](.gitbook/assets/15.png)
 
 16. Langkah berikutnya adalah upload dan install paket soal, upload paket soal melalui webmin \([https://localhost:10000](https://localhost:10000)\).
 
-  ![](.gitbook/assets/16.png)
+    ![](.gitbook/assets/16.png)
 
-  Setelah upload paket soal selesai, kembali pada beranda e-Xam Pengelola pilih **Paket soal** **Opsi modul** “Pilih paket yang akan diinstall” Klik **Install** \(tunggu sampai selesai\).
+    Setelah upload paket soal selesai, kembali pada beranda e-Xam Pengelola pilih **Paket soal** **Opsi modul** “Pilih paket yang akan diinstall” Klik **Install** \(tunggu sampai selesai\).
 
-  ![](.gitbook/assets/17.png)
+    ![](.gitbook/assets/17.png)
 
-  Apabila soal berhasil diinstall seperti gambar berikut :
+    Apabila soal berhasil diinstall seperti gambar berikut :
 
-  ![](.gitbook/assets/18.jpeg)
+    ![](.gitbook/assets/18.jpeg)
 
-  Klik menu Paket Soal, maka ditampilkan paket soal yang terinstall.
+    Klik menu Paket Soal, maka ditampilkan paket soal yang terinstall.
 
-  ![](.gitbook/assets/19.png)
+    ![](.gitbook/assets/19.png)
 
-  ![C:\Users\Damita\Desktop\2016-07-23\_073542.jpg](.gitbook/assets/20.jpeg) = mengaktifkan/mengnonaktifkan paket soal
+    ![C:\Users\Damita\Desktop\2016-07-23\_073542.jpg](.gitbook/assets/20.jpeg) = mengaktifkan/mengnonaktifkan paket soal
 
-  ![C:\Users\Damita\Desktop\2016-07-23\_073557.jpg](.gitbook/assets/21.jpeg) = cek integritas paket soal, pastikan “**soal seluruh berkas kelengkapan valid”**.
+    ![C:\Users\Damita\Desktop\2016-07-23\_073557.jpg](.gitbook/assets/21.jpeg) = cek integritas paket soal, pastikan “**soal seluruh berkas kelengkapan valid”**.
 
 17. Langkah selanjutnya sinkronisasi data peserta, klik Sinkronisasi Data Peserta tunggu sampai selesai seperti gambar berikut :
 
-  ![](.gitbook/assets/22.png)
+    ![](.gitbook/assets/22.png)
 
-  Selesai sinkronisasi data peserta, klik menu Pengawasan Pelaksanaan Opsi Modul Semua Filter, ditampilkan data peserta yang bisa ujian di server TUK.
+    Selesai sinkronisasi data peserta, klik menu Pengawasan Pelaksanaan Opsi Modul Semua Filter, ditampilkan data peserta yang bisa ujian di server TUK.
 
-  ![](.gitbook/assets/23.png)
+    ![](.gitbook/assets/23.png)
 
 ## e-Xam Pelaksana
 
-Aplikasi e-Xam Pelaksana terbaru ialah e-Xam Pelaksana versi 2017, penyempurnaan aplikasi versi terdahulu serta penambahan fitur Auto Pelaksana. Dapat didownload http://gg.gg/e-Xam\_Pelaksana
+Aplikasi e-Xam Pelaksana terbaru ialah e-Xam Pelaksana versi 2017, penyempurnaan aplikasi versi terdahulu serta penambahan fitur Auto Pelaksana. Dapat didownload [http://gg.gg/e-Xam\_Pelaksana](http://gg.gg/e-Xam_Pelaksana)
 
 Adapun cara mengintalasi dengan berbagai cara dijelaskan sebagai berikut :
 
@@ -128,8 +128,7 @@ Install Seluruh Modul Aplikasi, Bootloader dan konfigurasi bootloader
 Keterangan:
 
 * Digunakan untuk booting langsung Exam Pelaksana dari Harddrive lokal
-
-1. Hanya Install Modul
+* Hanya Install Modul
 
 Hanya untuk mengintsall modul saja
 
@@ -139,8 +138,7 @@ Keterangan:
 
 * Digunakan untuk mempersiapkan komputer client menjalankan e-Xam Pelaksana via _network boot_
 * Khusus digunakan untuk komputer yang hanya mendukung UEFI _booting_
-
-1. Install Rilis Legacy
+* Install Rilis Legacy
 
 Install Exam Pelaksana jika computer client compatible dengan exam pelaksana terdahulu
 
@@ -149,8 +147,7 @@ Install Exam Pelaksana jika computer client compatible dengan exam pelaksana ter
 Keterangan:
 
 * Digunakan pada komputer yang dapat menjalankan e-Xam Pelaksana versi lama
-
-1. Install Rilis Neo
+* Install Rilis Neo
 
 Install Exam Pelaksana Rilis Terbaru, untuk Komputer Terbaru
 
@@ -159,16 +156,13 @@ Install Exam Pelaksana Rilis Terbaru, untuk Komputer Terbaru
 Keterangan:
 
 * Digunakan pada komputer yang **tidak dapat** menjalankan e-Xam Pelaksana versi lama karena masalah kompatibilitas _hardware_ dan UEFI _booting_
-
-1. Exam Pelaksana : Network Booting
-
+* Exam Pelaksana : Network Booting
 * Digunakan untuk menjalankan bootloader e-Xam Pelaksana via jaringan
 * Aplikasi e-Xam Pelaksana tetap harus diinstal ke dalam komputer client dengan mode instalasi “Hanya instal modul”
 * BIOS komputer yang digunakan harus mendukung PXE dengan _network_ IPv4 \(hampir seluruh motherboard PC pada umumnya sudah mendukung PXE\)
 * Pada beberapa BIOS harus diaktifkan terlebih dahulu fitur CSM _\(Compatibility Support Module\)_ pada pengaturan _Network Boot_
 * Fasilitas _network booting_ dilayani oleh e-Xam Delta
-
-1. Auto Pelaksana
+* Auto Pelaksana
 
 ![](.gitbook/assets/28.png)
 
@@ -188,16 +182,14 @@ e-Xam Delta adalah aplikasi pendukung ujian online e-Xam dengan beberapa fasilit
 ![](.gitbook/assets/29.png) ![](.gitbook/assets/30.png)
 
 * Klik tombol “Pengaturan” pada kolom “Server DHCP, Pilih IP Server LAN dari kolom yang tersedia, lalu klik “Simpan”
-
-1. Konfigurasi e-Xam Delta \(Server PXE\)
+* Konfigurasi e-Xam Delta \(Server PXE\)
 
 ![](.gitbook/assets/31.png)
 
 * Klik tombol “Aktifkan” pada kolom “Server PXE”
 * Pastikan tombol yang diklik adalah tombol yang berada pada kolom “Server PXE” **bukan** tombol yang berada pada kolom “Server DHCP”
 * Setelah Server PXE aktif, maka e-Xam Delta akan melayani permintaan _booting_ yang berasal dari LAN yang sama dengan LAN IP Server yang dipilih pada pengaturan DHCP
-
-1. Setting Auto Pelaksana Client dan Server berada dalam LAN yang sama
+* Setting Auto Pelaksana Client dan Server berada dalam LAN yang sama
 
 ![](.gitbook/assets/32.png)
 
@@ -214,10 +206,9 @@ e-Xam Delta adalah aplikasi pendukung ujian online e-Xam dengan beberapa fasilit
 ![](.gitbook/assets/35.png)
 
 1. Setting Auto e-Xam Pelaksana dimana PC SERVER e-Xam terdapat **2 \(dua\)** buah Kartu Jaringan yaitu :
-
-* IP INTERNET DCHP CLIENT artinya IP internet diperoleh langsung dari Modem/Router Internet
-* IP LAN = 192.168.0.200/24
-* Jalankan e-Xam Delta, kemudian konfigurasi sesuai dengan gambar berikut :
+2. IP INTERNET DCHP CLIENT artinya IP internet diperoleh langsung dari Modem/Router Internet
+3. IP LAN = 192.168.0.200/24
+4. Jalankan e-Xam Delta, kemudian konfigurasi sesuai dengan gambar berikut :
 
 ![](.gitbook/assets/36.jpeg)
 

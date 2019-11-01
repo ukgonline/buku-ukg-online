@@ -5,35 +5,25 @@
 1. Pastikan aplikasi Virtualbox sudah terinstall.  
 2. Extract aplikasi e-Xam Server, klik kanan pilih “Extract Here” \(Pastikan aplikasi untuk WinRar atau sejenis sudah terinstall\).
   ![](.gitbook/assets/0%20%282%29.png)
-
 3. Buka folder hasil extract, kemudian jalankan \(klik 2x\) e-Xam Server.vbox
   ![](.gitbook/assets/1.png)
-
 4. Lakukan **Konfigurasi** dengan meng-klik menu **Setting** seperti gambar berikut :
-
-![](.gitbook/assets/2.jpeg)
-
-![](.gitbook/assets/3.jpeg)
-
-**Keterangan :**
-
-* Klik menu Setting **\(Nomor 1\)**
-* Klik menu Network **\(Nomor 2\)**
-* Adapter 1, Enable Network Adapater **\(Nomor 3\)**
-* Attaced to Pilih NAT **\(Nomor 4\)**
-* Klik Adapter 2 **\(Nomor 5\)**
-* centang Enable Network Adapater **\(Nomor 6\),**
-* Pilih Bridged Adapter **\(Nomor 7\)**,
-* Pilih Ethernet **\(Misalnya : Realteck PCIe Family Controller\)** yg saat ini digunakan untuk internet di PC Server **\(Nomor 8\)**,
-* Klik OK untuk menyimpan konfigurasi **\(Nomor 9\)**.
-
+  ![](.gitbook/assets/2.jpeg)
+  ![](.gitbook/assets/3.jpeg)
+  **Keterangan :**
+  * Klik menu Setting **\(Nomor 1\)**
+  * Klik menu Network **\(Nomor 2\)**
+  * Adapter 1, Enable Network Adapater **\(Nomor 3\)**
+  * Attaced to Pilih NAT **\(Nomor 4\)**
+  * Klik Adapter 2 **\(Nomor 5\)**
+  * centang Enable Network Adapater **\(Nomor 6\),**
+  * Pilih Bridged Adapter **\(Nomor 7\)**,
+  * Pilih Ethernet **\(Misalnya : Realteck PCIe Family Controller\)** yg saat ini digunakan untuk internet di PC Server **\(Nomor 8\)**,
+  * Klik OK untuk menyimpan konfigurasi **\(Nomor 9\)**.
 5. Pilih e-Xam Server kemudian tekan tombol “Start”.
-
-![](.gitbook/assets/4.png)
-
-Tunggu hingga muncul jendela seperti dibawah ini.
-
-![](.gitbook/assets/5.png)
+  ![](.gitbook/assets/4.png)
+  Tunggu hingga muncul jendela seperti dibawah ini.
+  ![](.gitbook/assets/5.png)
 
 6. Buka halaman Pengelola menggunakan web browser ketikkan alamat [http://localhost:8416](http://localhost:8416), maka ditampilkan seperti berikut :
 

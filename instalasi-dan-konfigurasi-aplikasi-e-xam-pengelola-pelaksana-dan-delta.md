@@ -5,11 +5,11 @@
 1. Pastikan aplikasi Virtualbox sudah terinstall.  
 2. Extract aplikasi e-Xam Server, klik kanan pilih “Extract Here” \(Pastikan aplikasi untuk WinRar atau sejenis sudah terinstall\).
 
-   ![](.gitbook/assets/0%20%282%29.png)  
+   ![](.gitbook/assets/0%20%282%29.png)
 
 3. Buka folder hasil extract, kemudian jalankan \(klik 2x\) e-Xam Server.vbox
 
-   ![](.gitbook/assets/1.png)  
+   ![](.gitbook/assets/1.png)
 
 4. Lakukan **Konfigurasi** dengan meng-klik menu **Setting** seperti gambar berikut :
 
@@ -33,15 +33,15 @@
 
    Tunggu hingga muncul jendela seperti dibawah ini.
 
-   ![](.gitbook/assets/5.png)  
+   ![](.gitbook/assets/5.png)
 
 6. Buka halaman Pengelola menggunakan web browser ketikkan alamat [http://localhost:8416](http://localhost:8416), maka ditampilkan seperti berikut :
 
-   ![Pesan Init error dikarenakan reginfo.txt belum diupload.](.gitbook/assets/6.png)  
+   ![Pesan Init error dikarenakan reginfo.txt belum diupload.](.gitbook/assets/6.png)
 
 7. Langkah berikutnya buka webmin dengan alamat [https://localhost:10000](https://localhost:10000).
 
-   ![](.gitbook/assets/7.png)  
+   ![](.gitbook/assets/7.png)
 
 8. Login webmin dengan username \(**root**\) dan password \(**examserver**\).
 9. Upload file reginfo.txt dan proginfo.txt pada direktori **/srv/exam/pengelola/etc** seperti gambar.
@@ -55,27 +55,27 @@
 
 10. Buka browser isikan alamat [http://localhost:8416](http://localhost:8416), ID LOGIN : **mimin** KATA SANDI : **12345**
 
-    ![](.gitbook/assets/9.png)  
+    ![](.gitbook/assets/9.png)
 
 11. Jika sesuai tampil seperti gambar di bawah ini :
 
     ![](.gitbook/assets/10.png)
 
-    Cek versi digunakan melihat versi aplikasi pusat, apabila muncul “**Aplikasi Terbaru**” e-Xam Pengelola siap digunakan, kalau “**Aplikasi Harus Diperbaharui**” maka e-Xam Pengelola harus dilakukan pembaharuan.  
+    Cek versi digunakan melihat versi aplikasi pusat, apabila muncul “**Aplikasi Terbaru**” e-Xam Pengelola siap digunakan, kalau “**Aplikasi Harus Diperbaharui**” maka e-Xam Pengelola harus dilakukan pembaharuan.
 
 12. Sebelum melakukan pembaharuan Pengelola, install terlebih dahulu aplikasi **e-Xam Delta**. Installasi e-Xam Delta cukup ikuti perintah yang ditampilkan sampai selesai, setelah itu jalankan e-Xam Delta.
 
-    ![](.gitbook/assets/11.png)  
+    ![](.gitbook/assets/11.png)
 
 13. Untuk melakukan pembaharuan e-Xam Pengelola, login melalui console Vbox \(username:**root** dan password:**examserver**\). Pastikan koneksi Internet tersambung dengan server pusat, ketikkan **ukgtool update** tunggu sampai seperti gambar berikut :
 
     ![](.gitbook/assets/12.png)
 
-    Restart e-Xam Pengelola dengan perintah reboot, tunggu sampai muncul tampilan login.  
+    Restart e-Xam Pengelola dengan perintah reboot, tunggu sampai muncul tampilan login.
 
 14. Refresh/reload halaman Pengelola akan ditampilkan :
 
-    ![](.gitbook/assets/13.png)  
+    ![](.gitbook/assets/13.png)
 
 15. Server TUK wajib diregister agar server bisa digunakan ujian, klik **Register** **Ajukan Pendaftaran**.
 
@@ -83,7 +83,7 @@
 
     Proses register akan disetujui oleh Admin Pusat, setelah disetujui maka Identitas Server menjadi **Sudah terdaftar** seperti gambar berikut :
 
-    ![](.gitbook/assets/15.png)  
+    ![](.gitbook/assets/15.png)
 
 16. Langkah berikutnya adalah upload dan install paket soal, upload paket soal melalui webmin \([https://localhost:10000](https://localhost:10000)\).
 
@@ -103,7 +103,7 @@
 
     ![C:\Users\Damita\Desktop\2016-07-23\_073542.jpg](.gitbook/assets/20.jpeg) = mengaktifkan/mengnonaktifkan paket soal
 
-    ![C:\Users\Damita\Desktop\2016-07-23\_073557.jpg](.gitbook/assets/21.jpeg) = cek integritas paket soal, pastikan “**soal seluruh berkas kelengkapan valid”**.  
+    ![C:\Users\Damita\Desktop\2016-07-23\_073557.jpg](.gitbook/assets/21.jpeg) = cek integritas paket soal, pastikan “**soal seluruh berkas kelengkapan valid”**.
 
 17. Langkah selanjutnya sinkronisasi data peserta, klik Sinkronisasi Data Peserta tunggu sampai selesai seperti gambar berikut :
 
@@ -119,7 +119,7 @@ Aplikasi e-Xam Pelaksana terbaru ialah e-Xam Pelaksana versi 2017, penyempurnaan
 
 Adapun cara mengintalasi dengan berbagai cara dijelaskan sebagai berikut :
 
-Instalasi Lengkap
+### Instalasi Lengkap
 
 Install Seluruh Modul Aplikasi, Bootloader dan konfigurasi bootloader
 
@@ -130,7 +130,7 @@ Keterangan:
 * Digunakan untuk booting langsung Exam Pelaksana dari Harddrive lokal
 * Hanya Install Modul
 
-Hanya untuk mengintsall modul saja
+### Hanya untuk menginstal modul saja
 
 ![](.gitbook/assets/25.png)
 
@@ -140,7 +140,7 @@ Keterangan:
 * Khusus digunakan untuk komputer yang hanya mendukung UEFI _booting_
 * Install Rilis Legacy
 
-Install Exam Pelaksana jika computer client compatible dengan exam pelaksana terdahulu
+### Install Exam Pelaksana jika computer client compatible dengan exam pelaksana terdahulu
 
 ![](.gitbook/assets/26.png)
 
@@ -149,7 +149,7 @@ Keterangan:
 * Digunakan pada komputer yang dapat menjalankan e-Xam Pelaksana versi lama
 * Install Rilis Neo
 
-Install Exam Pelaksana Rilis Terbaru, untuk Komputer Terbaru
+### Install Exam Pelaksana Rilis Terbaru, untuk Komputer Terbaru
 
 ![](.gitbook/assets/27.png)
 

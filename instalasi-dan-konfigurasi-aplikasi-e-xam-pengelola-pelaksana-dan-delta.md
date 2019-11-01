@@ -36,10 +36,12 @@
   ![Pesan Init error dikarenakan reginfo.txt belum diupload.](.gitbook/assets/6.png)
 
 7. Langkah berikutnya buka webmin dengan alamat [https://localhost:10000](https://localhost:10000).
+  
   ![](.gitbook/assets/7.png)
 
 8. Login webmin dengan username \(**root**\) dan password \(**examserver**\).   
 9. Upload file reginfo.txt dan proginfo.txt pada direktori **/srv/exam/pengelola/etc** seperti gambar.
+  
   ![](.gitbook/assets/8.png)
 
   Keterangan :
@@ -47,16 +49,21 @@
   * **proginfo.txt** = program informasi kegiatan \(bisa berganti sesuai kegiatan\)
 
 10. Buka browser isikan alamat [http://localhost:8416](http://localhost:8416), ID LOGIN : **mimin** KATA SANDI : **12345**
+  
   ![](.gitbook/assets/9.png)
 
 11. Jika sesuai tampil seperti gambar di bawah ini :
+  
   ![](.gitbook/assets/10.png)
+  
   Cek versi digunakan melihat versi aplikasi pusat, apabila muncul “**Aplikasi Terbaru**” e-Xam Pengelola siap digunakan, kalau “**Aplikasi Harus Diperbaharui**” maka e-Xam Pengelola harus dilakukan pembaharuan.
 
 12. Sebelum melakukan pembaharuan Pengelola, install terlebih dahulu aplikasi **e-Xam Delta**. Installasi e-Xam Delta cukup ikuti perintah yang ditampilkan sampai selesai, setelah itu jalankan e-Xam Delta.
+  
   ![](.gitbook/assets/11.png)
 
 13. Untuk melakukan pembaharuan e-Xam Pengelola, login melalui console Vbox \(username:**root** dan password:**examserver**\). Pastikan koneksi Internet tersambung dengan server pusat, ketikkan **ukgtool update** tunggu sampai seperti gambar berikut :
+  
   ![](.gitbook/assets/12.png)
 
   Restart e-Xam Pengelola dengan perintah reboot, tunggu sampai muncul tampilan login.
@@ -67,39 +74,39 @@
 
 15. Server TUK wajib diregister agar server bisa digunakan ujian, klik **Register** **Ajukan Pendaftaran**.
 
-![](.gitbook/assets/14.png)
+  ![](.gitbook/assets/14.png)
 
-Proses register akan disetujui oleh Admin Pusat, setelah disetujui maka Identitas Server menjadi **Sudah terdaftar** seperti gambar berikut :
+  Proses register akan disetujui oleh Admin Pusat, setelah disetujui maka Identitas Server menjadi **Sudah terdaftar** seperti gambar berikut :
 
-![](.gitbook/assets/15.png)
+  ![](.gitbook/assets/15.png)
 
-1. Langkah berikutnya adalah upload dan install paket soal, upload paket soal melalui webmin \([https://localhost:10000](https://localhost:10000)\).
+16. Langkah berikutnya adalah upload dan install paket soal, upload paket soal melalui webmin \([https://localhost:10000](https://localhost:10000)\).
 
-![](.gitbook/assets/16.png)
+  ![](.gitbook/assets/16.png)
 
-Setelah upload paket soal selesai, kembali pada beranda e-Xam Pengelola pilih **Paket soal** **Opsi modul** “Pilih paket yang akan diinstall” Klik **Install** \(tunggu sampai selesai\).
+  Setelah upload paket soal selesai, kembali pada beranda e-Xam Pengelola pilih **Paket soal** **Opsi modul** “Pilih paket yang akan diinstall” Klik **Install** \(tunggu sampai selesai\).
 
-![](.gitbook/assets/17.png)
+  ![](.gitbook/assets/17.png)
 
-Apabila soal berhasil diinstall seperti gambar berikut :
+  Apabila soal berhasil diinstall seperti gambar berikut :
 
-![](.gitbook/assets/18.jpeg)
+  ![](.gitbook/assets/18.jpeg)
 
-Klik menu Paket Soal, maka ditampilkan paket soal yang terinstall.
+  Klik menu Paket Soal, maka ditampilkan paket soal yang terinstall.
 
-![](.gitbook/assets/19.png)
+  ![](.gitbook/assets/19.png)
 
-![C:\Users\Damita\Desktop\2016-07-23\_073542.jpg](.gitbook/assets/20.jpeg) = mengaktifkan/mengnonaktifkan paket soal
+  ![C:\Users\Damita\Desktop\2016-07-23\_073542.jpg](.gitbook/assets/20.jpeg) = mengaktifkan/mengnonaktifkan paket soal
 
-![C:\Users\Damita\Desktop\2016-07-23\_073557.jpg](.gitbook/assets/21.jpeg) = cek integritas paket soal, pastikan “**soal seluruh berkas kelengkapan valid”**.
+  ![C:\Users\Damita\Desktop\2016-07-23\_073557.jpg](.gitbook/assets/21.jpeg) = cek integritas paket soal, pastikan “**soal seluruh berkas kelengkapan valid”**.
 
-1. Langkah selanjutnya sinkronisasi data peserta, klik Sinkronisasi Data Peserta tunggu sampai selesai seperti gambar berikut :
+17. Langkah selanjutnya sinkronisasi data peserta, klik Sinkronisasi Data Peserta tunggu sampai selesai seperti gambar berikut :
 
-![](.gitbook/assets/22.png)
+  ![](.gitbook/assets/22.png)
 
-Selesai sinkronisasi data peserta, klik menu Pengawasan Pelaksanaan Opsi Modul Semua Filter, ditampilkan data peserta yang bisa ujian di server TUK.
+  Selesai sinkronisasi data peserta, klik menu Pengawasan Pelaksanaan Opsi Modul Semua Filter, ditampilkan data peserta yang bisa ujian di server TUK.
 
-![](.gitbook/assets/23.png)
+  ![](.gitbook/assets/23.png)
 
 ## e-Xam Pelaksana
 
